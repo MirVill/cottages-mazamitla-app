@@ -1,0 +1,140 @@
+@import '../Abstracts/variables';
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1.5rem;
+  background-color: $color-primary;
+}
+
+.header-title {
+  color: $color-text-white;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.header-navbar-desktop {
+  display: flex;
+  align-content: center;
+
+  & ul {
+    display: flex;
+    list-style: none;
+    color:$color-text-white;
+
+    & li {
+      padding: 1rem;
+      font-size: 2rem;
+      align-self: center;
+      transition: transform .2s;
+    
+      &:hover {
+        border-bottom: 1px solid $color-secondary;
+        padding-bottom: .9rem;
+        cursor: pointer;
+        &:active{
+          transform: scale(.9);
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.header-navbar-mobile{
+  display: none;
+}
+
+.header-menu{
+  display: none;
+}
+
+@media (max-width: $tablet-size) {
+  .header-container{
+    flex-direction: column;
+  }
+  .header-title{
+    align-self: center;
+    font-size: 2.5rem;
+  }
+  .header-navbar-desktop{
+    justify-content: center;
+    & ul li {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: $mobile-l-size) {
+  .header-container {
+    padding: 1rem;
+  }
+  .header-title{
+    align-self: center;
+    font-size: 2.3rem;
+  }
+  .header-navbar-desktop{
+    justify-content: center;
+    & ul li {
+      font-size: 1.6rem;
+      margin-top: .4rem;
+      &:hover {
+        padding-bottom: .8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-m-size){
+  .header-container{
+    flex-direction: row;
+    padding: .8rem;
+  }
+
+  .header-navbar-desktop {
+    display: none;
+  }
+  .header-navbar-mobile {
+    position: absolute;
+    top: 5.2rem;
+    right: 0;
+    display: flex;
+    padding: .8rem;
+    align-content: center;
+    background-color: $color-primary;
+    border-top: 1px solid $color-text-white;
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    list-style: none;
+    color:$color-text-white;
+
+    & li {
+      padding: 1rem;
+      font-size: 1.5rem;
+      align-self: center;
+      transition: transform .2s;
+    
+      &:hover {
+        border-bottom: 1px solid $color-secondary;
+        padding-bottom: .9rem;
+        cursor: pointer;
+        &:active{
+          transform: scale(.9);
+          border: none;
+        }
+      }
+    }
+  }
+  }
+  .header-menu {
+    border: none;
+    border-radius: none;
+    color: $color-primary;
+    display: flex;
+    align-self: center;
+    color: $color-text-white;
+  }
+}
