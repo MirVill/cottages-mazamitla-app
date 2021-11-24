@@ -1,8 +1,14 @@
+import { Fragment } from "react";
+import MainLayout from "./Layouts/MainLayout";
+import LasCatarinas from "./Pages/LasCatarinas";
+
 function App() {
   return (
-    <div >
-      Las Catarinas
-    </div>
+    <Fragment>
+      <MainLayout >
+      <LasCatarinas />
+      </MainLayout>
+    </Fragment>
   );
 }
 
