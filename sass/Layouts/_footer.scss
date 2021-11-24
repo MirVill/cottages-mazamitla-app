@@ -1,0 +1,40 @@
+@import '../Abstracts/variables';
+
+.footer {
+  padding: 3rem;
+  background-color: #5E454B;
+  color: #fff;
+
+  & ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    & li {
+      font-size: 1.4rem;
+      transition: all .2s;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+        &:active{
+          transform: scale(.95);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-l-size) {
+  .footer {
+    padding: 1.5rem;
+    & ul {
+      flex-direction: column;
+      & li {
+        align-self: center;
+        margin-bottom: .5rem;
+      }
+    }
+  }
+  
+}
