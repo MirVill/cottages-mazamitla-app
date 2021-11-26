@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div className="header-container">
-      <h1 className="header-title">Cottages Mazamitla</h1>
+      <h1 className="header-title">Cabañas Las Catarinas</h1>
       <DesktopNavbar />
       {menuIsOpen && <MobileNavbar />}
       <div className="header-menu" onClick={menuClickHandler}>
