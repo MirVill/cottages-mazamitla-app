@@ -1,0 +1,8 @@
+@import '../Abstracts/variables';
+.card {
+  background-color: $color-tertiary;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  width: 33%;
+  margin-right: 2rem;
+}

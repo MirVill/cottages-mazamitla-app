@@ -165,3 +165,47 @@ body {
       .footer ul li {
         align-self: center;
         margin-bottom: .5rem; } }
+
+.features-list-container h1 {
+  font-size: 3rem;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: .5rem; }
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem; }
+  .features-list li {
+    flex: 0 0 50%;
+    padding: .5rem;
+    font-size: 1.7rem; }
+
+.faetures_angle {
+  color: #ffffff; }
+
+.features-icons-container {
+  margin-top: 2rem; }
+
+.features-icons-list {
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center; }
+  .features-icons-list li {
+    padding: 1rem 1.5rem;
+    border: 2px solid #ffffff;
+    align-self: center;
+    border-radius: 1rem; }
+
+.card {
+  background-color: #daecdc;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  width: 33%;
+  margin-right: 2rem; }
+
+.info-container {
+  display: flex; }
