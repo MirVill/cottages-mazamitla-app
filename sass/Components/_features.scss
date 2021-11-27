@@ -1,0 +1,44 @@
+@import '../Abstracts/variables';
+
+.features-list-container {
+  & h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid $color-text-white;
+    padding-bottom: .5rem;
+  }
+}
+.features-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  & li {
+    flex: 0 0 50%;
+    padding: .5rem;
+    font-size: 1.7rem;
+  }
+}
+
+.faetures_angle{
+  color: $color-text-white;
+}
+
+.features-icons-container{
+  margin-top: 2rem;
+}
+
+.features-icons-list{
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  
+    & li {
+      padding: 1rem 1.5rem;
+      border: 2px solid $color-text-white;
+      align-self: center;
+      border-radius: 1rem;
+    }
+}
