@@ -103,11 +103,18 @@
     align-content: center;
     background-color: $color-primary;
     border-top: 1px solid $color-text-white;
+    box-shadow: -.5rem 1rem 2rem .1rem rgba(0, 0, 0, 0.253);
+    z-index: 1000;
+
+
+    animation-name: moveInRight;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    overflow-x: hidden;
 
   & ul {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     list-style: none;
     color:$color-text-white;
 
@@ -136,5 +143,22 @@
     display: flex;
     align-self: center;
     color: $color-text-white;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  79% {
+    opacity: 0;
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
