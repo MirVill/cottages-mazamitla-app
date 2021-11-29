@@ -5,7 +5,6 @@ import {
   faCouch,
   faShower,
 } from "@fortawesome/free-solid-svg-icons";
-import { Fragment } from "react";
 
 const Features = (props) => {
   const angle = <FontAwesomeIcon icon={faAngleRight} size="sm"/>;
@@ -24,6 +23,7 @@ const Features = (props) => {
   const bedsList = props.beds.map((bed) => <div key={bed} >{bed}</div>);
   return (
     <div className="card">
+      <div className='features-container' >
       <div className="features-list-container">
         <h1>{props.description}</h1>
         <ul className="features-list">
@@ -51,6 +51,7 @@ const Features = (props) => {
             {shower} <div>{props.showers}</div>
           </li>
         </ul>
+      </div>
       </div>
     </div>
   );
