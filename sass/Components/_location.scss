@@ -1,0 +1,21 @@
+@import '../Abstracts/variables';
+.location-container {
+text-align: center;
+& h2 {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid $color-primary;
+  font-weight: 500;
+}
+& h3 {
+  padding-top: .5rem;
+  font-size: $paragraph-s;
+  font-weight: 400;
+}
+& img {
+  width: 80%;
+  margin-top: 1.5rem;
+  &:hover{
+    cursor: pointer;
+  }
+}
+}

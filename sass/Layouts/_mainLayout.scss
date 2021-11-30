@@ -2,7 +2,11 @@
 
 .background {
   padding: 2rem;
-  height: 84vh;
   background-color: #fff;
   color: $color-secondary;
+}
+@media(max-width: $mobile-l-size){
+  .background {
+    padding: 1rem;
+  }
 }

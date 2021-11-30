@@ -1,4 +1,6 @@
+import LasCatarinasData from "../Containers/LasCatarinasData";
+
 const LasCatarinas = () => {
-  return <div>Las catarinas</div>
+  return <LasCatarinasData />;
 };
 export default LasCatarinas;

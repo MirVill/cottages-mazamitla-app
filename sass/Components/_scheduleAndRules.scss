@@ -1,0 +1,46 @@
+@import '../Abstracts/variables';
+.schedule-container{
+  & h2 {
+    font-weight: 500;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $color-primary;
+  }
+  & p{
+    padding: .5rem 0;
+    font-size: $paragraph-s;
+  }
+}
+.rules-container{
+  margin-top: 1.5rem;
+  max-width: 600px;
+  & h2 {
+    font-weight: 500;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $color-primary;
+  }
+  & ul {
+    list-style: none;
+    padding: 1rem .5rem 0;
+    font-size: $paragraph;
+    line-height: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    & li {
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: $mobile-l-size) {
+  .schedule-container {
+    & h2 {
+      font-size: $title-s;
+    }
+  }
+  .rules-container {
+    & h2 {
+      font-size: $title-s;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../Abstracts/variables';
+.card {
+  border: 1px solid $color-primary;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.card-transparent{
+  padding: 2rem 3rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: $laptop-l-size) {
+  .card {
+    padding: 1.5rem 2.5rem .7rem;
+  }
+  .card-transparent {
+    padding: 1.5rem 2rem 0;
+  }
+};
+
+@media (max-width: $tablet-s-size){
+  .card {
+    padding: 1rem 1.5rem .7rem;
+  }
+}
+
+@media(max-width: $mobile-l-size){
+  .card-transparent {
+    padding: .5rem 1rem 0;
+  }
+}
