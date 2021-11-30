@@ -3,7 +3,7 @@ import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 const ScheduleAndRules = (props) => {
   const angle = <FontAwesomeIcon icon={faAngleRight} size="sm"/>;
   const rulesList = props.rules.map((rule) => {
-    return <li>{angle} {rule}</li>
+    return <li key={rule} >{angle} {rule}</li>
   })
   return (
     <div className="card-transparent">
