@@ -1,0 +1,14 @@
+@import '../Abstracts/variables';
+.cottage-page-container{
+  display: grid;
+  gap: 4rem;
+  .page-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 0 2rem  .5rem;
+    width: fit-content;
+    border-bottom: 2px solid $color-secondary;
+  }
+}
