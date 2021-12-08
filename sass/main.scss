@@ -1,10 +1,13 @@
+@import 'Abstracts/variables';
 @import 'base/base';
 @import 'Layouts/header';
 @import 'Layouts/mainLayout';
 @import 'Layouts/footer';
-@import 'Abstracts/variables';
 @import 'Components/features';
-@import 'Utils/card';
-@import 'components/LasCatarinas/informationLasCatarinas';
 @import 'components/location';
-@import 'components/scheduleAndRules'
+@import 'components/scheduleAndRules';
+@import 'components/gallery';
+@import 'components/LasCatarinas/informationLasCatarinas';
+@import 'components/carousel';
+@import 'pages/cottageContainer';
+@import 'Utils/card';
