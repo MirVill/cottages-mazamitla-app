@@ -15,12 +15,10 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  &:hover {
-    transform:translateX(-50%) translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-  }
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+
   &:active {
-    transform:translateX(-50%) translateY(-1px);
+    transform:translateX(-50%) translateY(2px);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
   }
 }
