@@ -245,6 +245,33 @@ body {
   .card-transparent {
     padding: .5rem 1rem 0; } }
 
+.btn {
+  border: none;
+  margin: 3rem;
+  display: inline-block;
+  padding: 1.7rem 5.9rem;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  border-radius: 4rem;
+  background-color: #7BC67B;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all .2s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .btn:hover {
+    transform: translateX(-50%) translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:active {
+    transform: translateX(-50%) translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 460px) {
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.2rem 5.4rem; } }
+
 .info-container {
   justify-content: space-around;
   align-content: center;

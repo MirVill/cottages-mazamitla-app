@@ -1,0 +1,32 @@
+@import '../Abstracts/variables';
+.btn {
+  border: none;
+  margin: 3rem;
+  display: inline-block;
+  padding: 1.7rem 5.9rem;
+  font-size: $title-xs;
+  letter-spacing: .3rem;
+  border-radius: 4rem;
+  background-color: $color-primary;
+  color: $color-text-white;
+  text-transform: uppercase;
+  transition: all .2s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  &:hover {
+    transform:translateX(-50%) translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+  }
+  &:active {
+    transform:translateX(-50%) translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+}
+
+@media (max-width: $mobile-l-size) {
+  .btn {
+    font-size: $paragraph;
+    padding: 1.2rem 5.4rem;
+  }
+}
