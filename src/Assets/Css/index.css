@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -396,6 +397,12 @@ body {
   padding: 2rem 3rem;
   margin: 1.5rem 0; }
 
+.card-component {
+  border: 1px solid #7BC67B;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem; }
+
 @media (max-width: 1440px) {
   .card {
     padding: 1.5rem 2.5rem .7rem; }
@@ -409,3 +416,113 @@ body {
 @media (max-width: 460px) {
   .card-transparent {
     padding: .5rem 1rem 0; } }
+
+@media (max-width: 515px) {
+  .card-component {
+    margin: 1rem;
+    padding: 1rem; } }
+
+.mazamitla-page {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  align-items: center; }
+
+.mazamitla__description-section {
+  padding: 0 20rem; }
+
+.mazamitla__description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(123, 198, 123, 0.7) 50%), url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg);
+  background-repeat: no-repeat;
+  min-height: 50rem; }
+
+.mazamitla__description-title {
+  background-color: #7BC67B;
+  font-size: 3rem;
+  padding: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  width: fit-content;
+  justify-self: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+.mazamitla__description-text {
+  color: #ffffff;
+  padding: 4rem;
+  font-size: 1.8rem; }
+
+@media (max-width: 1440px) {
+  .mazamitla__description-section {
+    padding: 0 10rem; } }
+
+@media (max-width: 1030px) {
+  .mazamitla__description-section {
+    padding: 0 3rem; } }
+
+@media (max-width: 872px) {
+  .mazamitla__description-section {
+    padding: 0; } }
+
+@media (max-width: 768px) {
+  .mazamitla__description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: linear-gradient(185deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 45%, rgba(123, 198, 123, 0.8) 45%), url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg); }
+  .mazamitla__description-text {
+    align-self: center; } }
+
+@media (max-width: 460px) {
+  .mazamitla__description-text {
+    padding: 2rem; } }
+
+@media (max-width: 380px) {
+  .mazamitla__description-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: linear-gradient(185deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 33%, rgba(123, 198, 123, 0.8) 33%), url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg); }
+  .mazamitla__description-title {
+    align-self: center;
+    padding: 2rem;
+    font-size: 2.5rem; }
+  .mazamitla__description-text {
+    grid-row-start: 2;
+    grid-row-end: 4; } }
+
+.activities__section {
+  display: flex;
+  flex-direction: column; }
+  .activities__section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    margin: 2rem auto;
+    text-transform: uppercase; }
+
+.activities__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.activities__photo {
+  max-width: 400px;
+  margin: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 515px) {
+  .activities__photo {
+    max-width: 250px; } }
+
+.actractions__section {
+  display: flex;
+  flex-direction: column; }
+  .actractions__section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    margin: 2rem auto;
+    text-transform: uppercase; }

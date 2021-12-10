@@ -1,0 +1,28 @@
+@import '../../Abstracts/variables';
+.activities__section {
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    text-align: center;
+    font-size: $title-l;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+  }
+}
+.activities__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.activities__photo{
+  max-width: 400px;
+  margin: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
+}
+@media (max-width:$tablet-s-size) {
+  .activities__photo{
+    max-width: 250px;
+  }
+}
