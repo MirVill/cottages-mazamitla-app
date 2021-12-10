@@ -2,7 +2,19 @@ import Card from "../Card";
 
 const MazamitlaActivities = (props) => {
 const activities = props.activitiesPhotos.map((act) => {
-  return <img src={act.photo} alt={act.name} key={act.name} className='activities__photo'/>
+  return (
+    <div className='activities__container' >
+      <img
+        src={act.photo}
+        alt={act.name}
+        key={act.name}
+        className="activities__photo"
+      />
+      <div>
+        <h2>{act.name}</h2>
+      </div>
+    </div>
+  );
 })
 return <section className='activities__section' >
   <div>
