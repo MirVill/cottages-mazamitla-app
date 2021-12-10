@@ -1,0 +1,84 @@
+.mazamitla__description-section{
+  padding: 0 20rem;
+}
+.mazamitla__description-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(105deg, 
+                                    rgba($color-text-white, .3) 0%, 
+                                    rgba($color-text-white, .1) 50%,
+                                    rgba($color-primary, .7) 50%),
+                                    url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg);
+  background-repeat: no-repeat;
+  min-height: 50rem;
+}
+.mazamitla__description-title{
+  background-color: $color-primary;
+  font-size: $title-l;
+  padding: 3rem;
+  color: $color-text-white;
+  font-weight: 300;
+  width: fit-content;
+  justify-self: center;
+  box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
+}
+.mazamitla__description-text{
+  color: $color-text-white;
+  padding: 4rem;
+  font-size: $paragraph;
+}
+@media (max-width:$laptop-l-size){
+  .mazamitla__description-section{
+    padding: 0 10rem;
+  }
+}
+@media (max-width:$laptop-size) {
+  .mazamitla__description-section{
+    padding: 0 3rem;
+  }
+}
+@media (max-width:$tablet-l-size) {
+  .mazamitla__description-section {
+    padding: 0;
+  }
+}
+@media (max-width:$tablet-size) {
+  .mazamitla__description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: linear-gradient(185deg, 
+                                    rgba($color-text-white, .3) 0%, 
+                                    rgba($color-text-white, .2) 45%,
+                                    rgba($color-primary, .8) 45%),
+                                    url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg);
+  }
+  .mazamitla__description-text{
+    align-self: center;
+  }
+}
+@media (max-width:$mobile-l-size) {
+  .mazamitla__description-text {
+    padding: 2rem;
+  }
+}
+@media (max-width:$mobile-m-size) {
+  .mazamitla__description-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: linear-gradient(185deg, 
+                                    rgba($color-text-white, .3) 0%, 
+                                    rgba($color-text-white, .2) 33%,
+                                    rgba($color-primary, .8) 33%),
+                                    url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg);
+  }
+  .mazamitla__description-title {
+    align-self: center;
+    padding: 2rem;
+    font-size: $title-m;
+  }
+  .mazamitla__description-text{
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}

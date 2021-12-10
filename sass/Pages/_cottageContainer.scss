@@ -2,13 +2,29 @@
 .cottage-page-container{
   display: grid;
   gap: 4rem;
+  justify-items: center;
+}
+.page-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 0 2rem  .5rem;
+  width: fit-content;
+  border-bottom: 2px solid $color-secondary;
+}
+@media (max-width: $tablet-size){
   .page-title {
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 500;
-    margin: 0 auto;
-    padding: 0 2rem  .5rem;
-    width: fit-content;
-    border-bottom: 2px solid $color-secondary;
+    margin-top: 2rem;
+  }
+}
+@media (max-width:$tablet-s-size){
+  .page-title {
+    font-size: $title-l;
+  }
+}
+@media (max-width:$mobile-l-size){
+  .page-title {
+    font-size: $title-m;
   }
 }

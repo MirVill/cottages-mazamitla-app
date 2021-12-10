@@ -1,9 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 const NavLinks = () => {
   return (
     <ul>
-      <li>Las Catarinas</li>
-      <li>Conoce Mazamitla</li>
-      <li>Contactos</li>
+      <NavLink to='/las-catarinas' className='header-navlinks' ><li>Las Catarinas</li></NavLink>
+      <NavLink to='/conoce-mazamitla' className='header-navlinks'><li>Conoce Mazamitla</li></NavLink>
+      <NavLink to='/contactos' className='header-navlinks'><li>Contactos</li></NavLink>
     </ul>
   );
 };

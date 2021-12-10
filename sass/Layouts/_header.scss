@@ -14,6 +14,10 @@
   font-weight: 500;
 }
 
+.header-navlinks {
+  text-decoration: none;
+}
+
 .header-navbar-desktop {
   display: flex;
   align-content: center;
@@ -24,6 +28,7 @@
     color:$color-text-white;
 
     & li {
+      color: $color-text-white;
       padding: 1rem;
       font-size: 2rem;
       align-self: center;
@@ -53,6 +58,8 @@
 @media (max-width: $tablet-size) {
   .header-container{
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
   }
   .header-title{
     align-self: center;
@@ -124,6 +131,7 @@
       font-size: 1.5rem;
       align-self: center;
       transition: transform .2s;
+      color: $color-text-white;
     
       &:hover {
         border-bottom: 1px solid $color-secondary;

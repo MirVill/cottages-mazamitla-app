@@ -3,6 +3,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import DesktopNavbar from "./Navbar/DesktopNavbar";
 import MobileNavbar from "./Navbar/MobileNavbar";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -13,7 +14,9 @@ const Header = () => {
 
   return (
     <div className="header-container">
-      <h1 className="header-title">Cabañas Las Catarinas</h1>
+      <NavLink to='inico' className='header-navlinks'>
+        <h1 className="header-title">Cabañas Las Catarinas</h1>
+      </NavLink>
       <DesktopNavbar />
       {menuIsOpen && <MobileNavbar />}
       <div className="header-menu" onClick={menuClickHandler}>

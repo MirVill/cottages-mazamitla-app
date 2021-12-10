@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +27,9 @@ body {
   font-size: 3rem;
   font-weight: 500; }
 
+.header-navlinks {
+  text-decoration: none; }
+
 .header-navbar-desktop {
   display: flex;
   align-content: center; }
@@ -34,6 +38,7 @@ body {
     list-style: none;
     color: #ffffff; }
     .header-navbar-desktop ul li {
+      color: #ffffff;
       padding: 1rem;
       font-size: 2rem;
       align-self: center;
@@ -54,7 +59,9 @@ body {
 
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0; }
   .header-title {
     align-self: center;
     font-size: 2.5rem; }
@@ -107,7 +114,8 @@ body {
         padding: 1rem;
         font-size: 1.5rem;
         align-self: center;
-        transition: transform .2s; }
+        transition: transform .2s;
+        color: #ffffff; }
         .header-navbar-mobile ul li:hover {
           border-bottom: 1px solid #5E454B;
           padding-bottom: .9rem;
@@ -376,15 +384,29 @@ body {
 
 .cottage-page-container {
   display: grid;
-  gap: 4rem; }
-  .cottage-page-container .page-title {
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 500;
-    margin: 0 auto;
-    padding: 0 2rem  .5rem;
-    width: fit-content;
-    border-bottom: 2px solid #5E454B; }
+  gap: 4rem;
+  justify-items: center; }
+
+.page-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 0 2rem  .5rem;
+  width: fit-content;
+  border-bottom: 2px solid #5E454B; }
+
+@media (max-width: 768px) {
+  .page-title {
+    margin-top: 2rem; } }
+
+@media (max-width: 515px) {
+  .page-title {
+    font-size: 3rem; } }
+
+@media (max-width: 460px) {
+  .page-title {
+    font-size: 2.5rem; } }
 
 .card {
   border: 1px solid #7BC67B;
@@ -395,6 +417,12 @@ body {
 .card-transparent {
   padding: 2rem 3rem;
   margin: 1.5rem 0; }
+
+.card-component {
+  border: 1px solid #7BC67B;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem; }
 
 @media (max-width: 1440px) {
   .card {
@@ -410,6 +438,11 @@ body {
   .card-transparent {
     padding: .5rem 1rem 0; } }
 
+@media (max-width: 515px) {
+  .card-component {
+    margin: 1rem;
+    padding: 1rem; } }
+
 .btn {
   border: none;
   margin-bottom: 3rem;
@@ -424,14 +457,122 @@ body {
   text-transform: uppercase;
   transition: all .2s;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn:active {
-    transform: translateX(-50%) translateY(2px);
+    transform: translateY(2px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 @media (max-width: 460px) {
   .btn {
     font-size: 1.8rem;
     padding: 1.2rem 5.4rem; } }
+
+.mazamitla-page {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  align-items: center; }
+
+.mazamitla__description-section {
+  padding: 0 20rem; }
+
+.mazamitla__description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(123, 198, 123, 0.7) 50%), url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg);
+  background-repeat: no-repeat;
+  min-height: 50rem; }
+
+.mazamitla__description-title {
+  background-color: #7BC67B;
+  font-size: 3rem;
+  padding: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  width: fit-content;
+  justify-self: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+.mazamitla__description-text {
+  color: #ffffff;
+  padding: 4rem;
+  font-size: 1.8rem; }
+
+@media (max-width: 1440px) {
+  .mazamitla__description-section {
+    padding: 0 10rem; } }
+
+@media (max-width: 1030px) {
+  .mazamitla__description-section {
+    padding: 0 3rem; } }
+
+@media (max-width: 872px) {
+  .mazamitla__description-section {
+    padding: 0; } }
+
+@media (max-width: 768px) {
+  .mazamitla__description-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: linear-gradient(185deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 45%, rgba(123, 198, 123, 0.8) 45%), url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg); }
+  .mazamitla__description-text {
+    align-self: center; } }
+
+@media (max-width: 460px) {
+  .mazamitla__description-text {
+    padding: 2rem; } }
+
+@media (max-width: 380px) {
+  .mazamitla__description-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: linear-gradient(185deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 33%, rgba(123, 198, 123, 0.8) 33%), url(../../../src/Assets/Images/Mazamitla-Pueblo-Mágico.jpg); }
+  .mazamitla__description-title {
+    align-self: center;
+    padding: 2rem;
+    font-size: 2.5rem; }
+  .mazamitla__description-text {
+    grid-row-start: 2;
+    grid-row-end: 4; } }
+
+.activities__section {
+  display: flex;
+  flex-direction: column; }
+  .activities__section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    margin: 2rem auto;
+    text-transform: uppercase; }
+
+.activities__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.activities__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .activities__container h2 {
+    font-weight: 300; }
+
+.activities__photo {
+  max-width: 400px;
+  max-height: 300px;
+  margin: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 515px) {
+  .activities__photo {
+    max-width: 250px; } }
+
+@media (max-width: 515px) {
+  .activities__section h1 {
+    font-size: 2.5rem; } }
+
+@media (max-width: 460px) {
+  .activities__section h1 {
+    font-size: 2.3rem; } }
