@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Card from "../Components/Card";
 import Button from "../Utils/Button";
 
@@ -53,7 +54,7 @@ const Contacts = () => {
           </Card>
         </div>
       </section>
-      <Button text="Cabañas" />
+      <NavLink to='las-catarinas'><Button text="Cabañas" /></NavLink>
     </div>
   );
 };
