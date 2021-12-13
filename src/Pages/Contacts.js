@@ -15,7 +15,7 @@ const Contacts = () => {
           </Card>
           <Card>
             <h3>Sr. Salvador (Administrador)</h3>
-            <p>Tel: 341-41-12-501</p>
+            <p>Tel: 333-47-50-883</p>
           </Card>
         </div>
       </section>
