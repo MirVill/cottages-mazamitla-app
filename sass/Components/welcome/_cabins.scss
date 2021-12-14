@@ -1,0 +1,17 @@
+@import '../../Abstracts/variables';
+.cabins-container{
+  background-color: $color-text-white;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  & h1 {
+    font-size: $title-l;
+    font-weight: 400;
+  }
+}
+.cabins-img {
+  max-width: 400px;
+  border-radius: 2rem;
+  margin-right: 2rem;
+}

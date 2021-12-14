@@ -1,0 +1,10 @@
+@import '../../Abstracts/variables';
+.mazamitla-resume__container {
+  background-color: $color-text-white;
+  padding: 2rem 2rem 1rem;
+  text-align: center;
+}
+.mazamitla-resume__img {
+  max-width: 400px;
+  margin-bottom: 2rem;
+}

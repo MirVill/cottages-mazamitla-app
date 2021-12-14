@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div className="header-container">
-      <NavLink to='inico' className='header-navlinks'>
+      <NavLink to='/inicio' className='header-navlinks'>
         <h1 className="header-title">Cabañas Las Catarinas</h1>
       </NavLink>
       <DesktopNavbar />
