@@ -5,6 +5,7 @@ const InformationLasCatarinas = () => {
   const features = {
     name: "las catarinas",
     description: "Cabaña para 18 personas",
+    price: '$2,700MXN por noche',
     bedrooms: "3 Recamaras",
     toilets: "2 Baños y medio",
     chimneys: "3 Chimeneas",
@@ -35,6 +36,7 @@ const InformationLasCatarinas = () => {
     <div className="info-container">
       <Features
         name={features.name}
+        price={features.price}
         description={features.description}
         bedrooms={features.bedrooms}
         toilets={features.toilets}
