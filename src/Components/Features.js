@@ -25,7 +25,7 @@ const Features = (props) => {
     <div className="card">
       <div className='features-container' >
       <div className="features-list-container">
-        <h1>{props.description}</h1>
+        <h1>{props.description}<span><p>{props.price}</p></span></h1>
         <ul className="features-list">
           <li>
             {angle} {props.bedrooms}

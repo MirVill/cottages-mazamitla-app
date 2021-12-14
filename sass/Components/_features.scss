@@ -6,6 +6,15 @@
     font-weight: 500;
     border-bottom: 2px solid $color-primary;
     padding-bottom: .5rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+  }
+  & p {
+    font-size: $paragraph;
+    position: relative;
+    align-self: center;
+    justify-self: end;
   }
 }
 .features-list{
@@ -39,6 +48,14 @@
       align-self: center;
       border-radius: 1rem;
     }
+}
+@media (max-width:$tablet-size) {
+  .features-list-container{
+    & h1 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
 @media (max-width: $tablet-s-size){
   .features-list-container {

@@ -182,7 +182,16 @@ body {
   font-size: 3rem;
   font-weight: 500;
   border-bottom: 2px solid #7BC67B;
-  padding-bottom: .5rem; }
+  padding-bottom: .5rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  display: flex; }
+
+.features-list-container p {
+  font-size: 1.8rem;
+  position: relative;
+  align-self: center;
+  justify-self: end; }
 
 .features-list {
   list-style: none;
@@ -210,6 +219,11 @@ body {
     border: 2px solid #7BC67B;
     align-self: center;
     border-radius: 1rem; }
+
+@media (max-width: 768px) {
+  .features-list-container h1 {
+    flex-direction: column;
+    align-items: flex-start; } }
 
 @media (max-width: 515px) {
   .features-list-container h1 {
@@ -355,6 +369,7 @@ body {
     height: 100%; }
   .carousel-inner {
     object-fit: cover;
+    width: 100%;
     display: flex;
     justify-content: center; }
     .carousel-inner img {
@@ -389,8 +404,10 @@ body {
 
 .page-title {
   text-align: center;
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
   margin: 0 auto;
   padding: 0 2rem  .5rem;
   width: fit-content;
