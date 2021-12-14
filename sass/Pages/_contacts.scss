@@ -1,0 +1,124 @@
+@import '../Abstracts/variables';
+ .contacts__page-container {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+}
+.contacts__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2 {
+    font-size: $title-l;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  & p {
+    font-size: $paragraph;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+.contacts__section-cards {
+  display: flex;
+}
+.contacts__meet-us {
+  display:  grid;
+  justify-items: center;
+  width: 100%;
+  min-height: 45rem;
+  background-image: linear-gradient(0deg, 
+  rgba($color-text-white, .3) 30%, 
+  rgba($color-text-white, .2) 85%,
+  rgba($color-primary, .8) 15%),
+  url(../../../src/Assets/Images/forest.jpg);
+  & h1 {
+    margin-top: 2rem;
+    font-size: $title-l;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    color: $color-text-white;
+    text-transform: uppercase;
+  }
+}
+.contacts__meet-us--details{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  & h3 {
+    margin-top: 1rem;
+    font-size: $title-m;
+    font-weight: 400;
+    letter-spacing: .4rem;
+  }
+  & p {
+    font-size: $paragraph;
+    padding: 2rem 1rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width:$laptop-m-size){
+  .contacts__meet-us{
+    background-image: linear-gradient(0deg, 
+    rgba($color-text-white, .3) 20%, 
+    rgba($color-text-white, .2) 90%,
+    rgba($color-primary, .8) 30%),
+    url(../../../src/Assets/Images/forest.jpg);
+  } 
+}
+@media (max-width:$laptop-size){
+  .contacts__meet-us{
+    background-image: linear-gradient(0deg, 
+    rgba($color-text-white, .3) 20%, 
+    rgba($color-text-white, .2) 92%,
+    rgba($color-primary, .8) 30%),
+    url(../../../src/Assets/Images/forest.jpg);
+  } 
+}
+
+@media (max-width:$tablet-size) {
+  .contacts__section {
+    margin-top: 1.5rem;
+    & p {
+      margin-bottom: 1rem;
+    }
+  }
+  .contacts__section-cards {
+    flex-direction: column;
+  }
+  .contacts__meet-us{
+    background-image: linear-gradient(0deg, 
+    rgba($color-text-white, .3) 20%, 
+    rgba($color-text-white, .2) 93%,
+    rgba($color-primary, .8) 30%),
+    url(../../../src/Assets/Images/forest.jpg);
+  } 
+}
+@media (max-width:$tablet-s-size) {
+  .contacts__section {
+    & h2 {
+      font-size: $title-m;
+    }
+  }
+  .contacts__meet-us {
+    & h1 {
+      font-size: $title-m;
+    }
+  }
+  .contacts__meet-us--details {
+    & h3 {
+      font-size: $title-s;
+    } 
+  }
+}
+@media (max-width:$mobile-m-size){
+  .contacts__meet-us{
+    background-image: linear-gradient(0deg, 
+    rgba($color-text-white, .3) 20%, 
+    rgba($color-text-white, .2) 95%,
+    rgba($color-primary, .8) 30%),
+    url(../../../src/Assets/Images/forest.jpg);
+  } 
+}

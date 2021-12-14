@@ -593,3 +593,173 @@ body {
 @media (max-width: 460px) {
   .activities__section h1 {
     font-size: 2.3rem; } }
+
+.cottage-page-container {
+  display: grid;
+  gap: 4rem;
+  justify-items: center; }
+
+.page-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 0 2rem  .5rem;
+  width: fit-content;
+  border-bottom: 2px solid #5E454B; }
+
+@media (max-width: 768px) {
+  .page-title {
+    margin-top: 2rem; } }
+
+@media (max-width: 515px) {
+  .page-title {
+    font-size: 3rem; } }
+
+@media (max-width: 460px) {
+  .page-title {
+    font-size: 2.5rem; } }
+
+.contacts__page-container {
+  display: grid;
+  gap: 3rem;
+  justify-items: center; }
+
+.contacts__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contacts__section h2 {
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .contacts__section p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    text-align: center; }
+
+.contacts__section-cards {
+  display: flex; }
+
+.contacts__meet-us {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  min-height: 45rem;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0.2) 85%, rgba(123, 198, 123, 0.8) 15%), url(../../../src/Assets/Images/forest.jpg); }
+  .contacts__meet-us h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    color: #ffffff;
+    text-transform: uppercase; }
+
+.contacts__meet-us--details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem; }
+  .contacts__meet-us--details h3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem; }
+  .contacts__meet-us--details p {
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+    line-height: 3rem; }
+
+@media (max-width: 1360px) {
+  .contacts__meet-us {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.2) 90%, rgba(123, 198, 123, 0.8) 30%), url(../../../src/Assets/Images/forest.jpg); } }
+
+@media (max-width: 1030px) {
+  .contacts__meet-us {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.2) 92%, rgba(123, 198, 123, 0.8) 30%), url(../../../src/Assets/Images/forest.jpg); } }
+
+@media (max-width: 768px) {
+  .contacts__section {
+    margin-top: 1.5rem; }
+    .contacts__section p {
+      margin-bottom: 1rem; }
+  .contacts__section-cards {
+    flex-direction: column; }
+  .contacts__meet-us {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.2) 93%, rgba(123, 198, 123, 0.8) 30%), url(../../../src/Assets/Images/forest.jpg); } }
+
+@media (max-width: 515px) {
+  .contacts__section h2 {
+    font-size: 2.5rem; }
+  .contacts__meet-us h1 {
+    font-size: 2.5rem; }
+  .contacts__meet-us--details h3 {
+    font-size: 2.3rem; } }
+
+@media (max-width: 380px) {
+  .contacts__meet-us {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.2) 95%, rgba(123, 198, 123, 0.8) 30%), url(../../../src/Assets/Images/forest.jpg); } }
+
+.card {
+  border: 1px solid #7BC67B;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  margin: 1.5rem 0; }
+
+.card-transparent {
+  padding: 2rem 3rem;
+  margin: 1.5rem 0; }
+
+.card-component {
+  border: 1px solid #7BC67B;
+  display: grid;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 0.9) 70%);
+  max-width: 400px; }
+
+@media (max-width: 1440px) {
+  .card {
+    padding: 1.5rem 2.5rem .7rem; }
+  .card-transparent {
+    padding: 1.5rem 2rem 0; } }
+
+@media (max-width: 515px) {
+  .card {
+    padding: 1rem 1.5rem .7rem; } }
+
+@media (max-width: 460px) {
+  .card-transparent {
+    padding: .5rem 1rem 0; } }
+
+@media (max-width: 515px) {
+  .card-component {
+    margin: 1rem;
+    padding: 1rem; } }
+
+.btn {
+  border: none;
+  margin-bottom: 3rem;
+  width: fit-content;
+  display: inline-block;
+  padding: 1.7rem 5.9rem;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  border-radius: 4rem;
+  background-color: #7BC67B;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all .2s;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 460px) {
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.2rem 5.4rem; } }
