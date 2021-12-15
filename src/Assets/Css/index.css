@@ -57,7 +57,7 @@ body {
 .header-menu {
   display: none; }
 
-@media (max-width: 768px) {
+@media (max-width: 872px) {
   .header-container {
     flex-direction: column;
     align-items: center;
@@ -507,6 +507,113 @@ body {
   .activities__section h1 {
     font-size: 2.3rem; } }
 
+.cabins-container {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0.3) 50%, rgba(123, 198, 123, 0.7) 0%);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 1.3rem 3.3rem rgba(0, 0, 0, 0.5); }
+  .cabins-container h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #7BC67B;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+.cabins-img {
+  max-width: 400px;
+  max-height: 400px;
+  align-self: center;
+  border-radius: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+.cabins-description__container {
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center; }
+
+.cabins-cards__container {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .cabins-cards__container h2 {
+    font-size: 2.5rem;
+    font-weight: 500; }
+  .cabins-cards__container p {
+    font-size: 1.8rem;
+    padding: 1rem .5rem; }
+
+.card-icon {
+  margin-right: .5rem;
+  align-self: center; }
+
+@media (max-width: 768px) {
+  .cabins-cards__container {
+    grid-template-columns: 1fr; }
+  .cabins-img {
+    max-width: 300px; } }
+
+@media (max-width: 1360px) {
+  .cabins-description__container {
+    gap: 0; } }
+
+@media (max-width: 1090px) {
+  .cabins-container {
+    flex-direction: column; }
+    .cabins-container h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem; }
+  .cabins-cards__container h2 {
+    font-size: 2.3rem; }
+  .cabins-img {
+    margin: 0; } }
+
+@media (max-width: 515px) {
+  .cabins-container {
+    padding: 1rem .2rem; } }
+
+@media (max-width: 460px) {
+  .cabins-container {
+    border-radius: 0; }
+    .cabins-container h1 {
+      font-size: 2.3rem; }
+  .cabins-cards__container h2 {
+    font-size: 2rem;
+    font-weight: 500; }
+  .cabins-cards__container p {
+    font-size: 1.7rem; } }
+
+.mazamitla-resume__container {
+  background-color: #ffffff;
+  padding: 2rem 2rem 1rem;
+  text-align: center;
+  align-self: center;
+  box-shadow: 0 1.3rem 3.3rem rgba(0, 0, 0, 0.5);
+  margin: 2rem; }
+
+.mazamitla-resume__img {
+  max-width: 400px;
+  margin-bottom: 2rem; }
+
+@media (max-width: 768px) {
+  .mazamitla-resume__img {
+    max-width: 300px; } }
+
+@media (max-width: 460px) {
+  .mazamitla-resume__container {
+    padding: 0;
+    background-color: transparent;
+    margin: 1.5rem 0;
+    box-shadow: none; } }
+
 .welcome-page {
   display: grid;
   align-items: center;
@@ -518,7 +625,8 @@ body {
   align-items: center;
   padding: 5rem; }
   .title-section img {
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    max-width: 400px; }
   .title-section h1 {
     font-size: 6rem;
     font-weight: 600;
@@ -534,33 +642,68 @@ body {
 
 .resume-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 4rem 2rem;
   background-image: url(../../../src/Assets/Images/trees.jpg); }
 
-.cabins-container {
-  background-color: #ffffff;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
+.reservations-section {
+  text-align: center;
   padding: 2rem; }
-  .cabins-container h1 {
-    font-size: 3rem;
-    font-weight: 400; }
+  .reservations-section h1 {
+    justify-self: center;
+    font-size: 3rem; }
 
-.cabins-img {
-  max-width: 400px;
-  border-radius: 2rem;
-  margin-right: 2rem; }
+.phone {
+  margin-right: .3rem;
+  color: #7BC67B; }
 
-.mazamitla-resume__container {
-  background-color: #ffffff;
-  padding: 2rem 2rem 1rem;
-  text-align: center; }
+@media (max-width: 1090px) {
+  .title-section h1 {
+    font-size: 4.5rem;
+    letter-spacing: 1.2rem; }
+    .title-section h1 span {
+      font-size: 2.5rem;
+      letter-spacing: 1rem; }
+  .title-section img {
+    max-width: 250px; } }
 
-.mazamitla-resume__img {
-  max-width: 400px;
-  margin-bottom: 2rem; }
+@media (max-width: 872px) {
+  .title-section {
+    padding: 3rem 1rem 2rem; }
+    .title-section h1 {
+      font-size: 4rem;
+      line-height: 4.5rem; }
+      .title-section h1 span {
+        font-size: 2rem;
+        letter-spacing: .5rem; }
+    .title-section img {
+      max-width: 200px; }
+  .resume-section {
+    padding: 2rem 0; } }
+
+@media (max-width: 768px) {
+  .title-section img {
+    margin: 0; } }
+
+@media (max-width: 612px) {
+  .title-section img {
+    display: none; } }
+
+@media (max-width: 460px) {
+  .resume-section {
+    padding: 0; } }
+
+@media (max-width: 460px) {
+  .title-section h1 {
+    font-size: 3rem; }
+    .title-section h1 span {
+      font-size: 1.8rem; }
+  .reservations-section {
+    padding: 1rem; }
+    .reservations-section h1 {
+      font-size: 2.5rem; } }
+
 .cottage-page-container {
   display: grid;
   gap: 4rem;
