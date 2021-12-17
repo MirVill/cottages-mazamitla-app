@@ -1,0 +1,118 @@
+@import '../Abstracts/variables';
+.welcome-page {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+}
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  & img {
+    margin-right: 2rem;
+    max-width: 400px;
+  }
+  & h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 7rem;
+    & span {
+      font-size: 3rem;
+      letter-spacing: 1.5rem;
+    }
+  }
+}
+.resume-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-image:
+ url(../../../src/Assets/Images/trees.jpg)
+}
+.reservations-section{
+  text-align: center;
+  padding: 2rem;
+  & h1 {
+    justify-self: center;
+    font-size: $title-l;
+  }
+}
+.phone {
+  margin-right: .3rem;
+  color:  $color-primary;
+}
+@media (max-width: $laptop-s-size) {
+  .title-section {
+    & h1 {
+      font-size: 4.5rem;
+      letter-spacing: 1.2rem;
+      & span {
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+      }
+    } 
+    & img {
+      max-width: 250px;
+    }
+  }
+}
+@media (max-width:$tablet-l-size) {
+  .title-section{
+    padding: 3rem 1rem 2rem;
+    & h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    & span {
+      font-size: 2rem;
+      letter-spacing: .5rem;
+    }
+  } & img {
+    max-width: 200px;
+  }
+}
+.resume-section {
+  padding: 2rem 0;
+ }
+}
+@media (max-width: $tablet-size){
+  .title-section {
+    & img {
+      margin: 0;
+    }
+  }
+}
+@media (max-width:$tablet-m-size) {
+  .title-section {
+    & img {
+      display: none;
+    }
+  }
+};
+@media (max-width:$mobile-l-size) {
+  .resume-section{
+    padding: 0
+  }
+};
+@media (max-width:$mobile-l-size) {
+  .title-section{
+    & h1 {
+      font-size: $title-l;
+      & span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .reservations-section{
+    padding: 1rem;
+    & h1 {
+      font-size: $title-m;
+    }
+  }
+};

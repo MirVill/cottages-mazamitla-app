@@ -1,0 +1,109 @@
+@import '../../Abstracts/variables';
+.cabins-container{
+  background-image: linear-gradient( 
+  rgba($color-text-white, .5) 100%, 
+  rgba($color-text-white, .3) 50%,
+  rgba($color-primary, .7) 0%);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 1.3rem 3.3rem rgba(0,0,0, .5);
+  & h1 {
+    font-size: $title-l;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    color: $color-text-white;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
+  }
+}
+.cabins-img {
+  max-width: 400px;
+  max-height: 400px;
+  align-self: center;
+  border-radius: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
+}
+.cabins-description__container {
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+.cabins-cards__container {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  & h2 {
+    font-size: $title-m;
+    font-weight: 500;
+  }
+  p {
+  font-size: $paragraph;
+  padding: 1rem .5rem;
+  }
+}
+.card-icon {
+  margin-right: .5rem;
+  align-self: center;
+}
+@media (max-width:$tablet-size){
+  .cabins-cards__container {
+    grid-template-columns: 1fr;
+
+  }
+  .cabins-img {
+      max-width: 300px;
+  }
+}
+@media (max-width:$laptop-m-size) {
+  .cabins-description__container {
+    gap: 0;
+  }
+}
+@media (max-width:$laptop-s-size) {
+  .cabins-container {
+    flex-direction: column;
+    & h1 {
+      font-size: $title-m;
+      margin-top: 2rem;
+    }
+  }
+  .cabins-cards__container {
+    & h2 {
+      font-size: $title-s;
+    }
+  }
+  .cabins-img {
+    margin: 0;
+  }
+}
+@media (max-width:$tablet-s-size) {
+  .cabins-container {
+    padding: 1rem .2rem;
+  }
+}
+
+@media (max-width:$mobile-l-size) {
+  .cabins-container{
+    border-radius: 0;
+    & h1 {
+      font-size: $title-s;
+    }
+  }
+  .cabins-cards__container {
+    & h2 {
+      font-size: $title-xs;
+      font-weight: 500;
+  }
+  & p {
+    font-size: $paragraph-s;
+  }
+ }
+}
