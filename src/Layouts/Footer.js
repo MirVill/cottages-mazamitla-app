@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className='footer' >
+    <footer className="footer">
+      <NavLink to="/contactos" className="footer-navlink">
+        <h4>¿Quienes somos?</h4>
+      </NavLink>
       <ul>
-        <li>¿Quienes somos?</li>
-        <li>¿Donde nos encontramos?</li>
-        <li>Reservaciones</li>
+        <li>Politica de reservación</li>
+        <li>Proceso de llegada</li>
       </ul>
     </footer>
   );
