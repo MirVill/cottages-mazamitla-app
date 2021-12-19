@@ -867,6 +867,9 @@ body {
   transition: all .2s;
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn:hover {
+    cursor: pointer;
+    color: #5E454B; }
   .btn:active {
     transform: translateY(2px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
