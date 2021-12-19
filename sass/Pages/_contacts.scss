@@ -23,6 +23,9 @@
 .contacts__section-cards {
   display: flex;
 }
+.contact-wrapper {
+  min-width: 257px;
+}
 .contacts__meet-us {
   display:  grid;
   justify-items: center;
