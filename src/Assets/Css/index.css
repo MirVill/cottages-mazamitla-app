@@ -155,19 +155,31 @@ body {
 .footer {
   padding: 3rem;
   background-color: #5E454B;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   .footer ul {
     display: flex;
-    justify-content: space-around;
-    list-style: none; }
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    line-height: 2rem; }
     .footer ul li {
       font-size: 1.4rem;
       transition: all .2s; }
-      .footer ul li:hover {
-        cursor: pointer;
-        color: #7BC67B; }
-        .footer ul li:hover:active {
-          transform: scale(0.95); }
+
+.footer-navlink {
+  text-decoration: none;
+  color: #ffffff; }
+  .footer-navlink h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    letter-spacing: .5rem; }
+  .footer-navlink:hover {
+    cursor: pointer;
+    color: #7BC67B; }
+    .footer-navlink:hover:active {
+      transform: scale(0.95); }
 
 @media (max-width: 460px) {
   .footer {

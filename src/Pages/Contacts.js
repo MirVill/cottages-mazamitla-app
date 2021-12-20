@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import Card from "../Components/Card";
 import Button from "../Utils/Button";
+import { useEffect } from "react";
 
 const Contacts = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="contacts__page-container">
       <section className="contacts__section">
