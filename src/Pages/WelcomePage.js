@@ -4,7 +4,9 @@ import MazamitlaResume from "../Components/Welcome/mazamitlaResume";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const WelcomePage = () => {
-  const phone = <FontAwesomeIcon icon={faPhoneAlt} size="sm" className="phone"/>
+  const phone = (
+    <FontAwesomeIcon icon={faPhoneAlt} size="sm" className="phone" />
+  );
   return (
     <div className="welcome-page">
       <section className="title-section">
@@ -14,8 +16,8 @@ const WelcomePage = () => {
         </h1>
       </section>
       <section className="resume-section">
-      <Cabins />
-      <MazamitlaResume />
+        <Cabins />
+        <MazamitlaResume />
       </section>
       <section className="reservations-section">
         <h1>Reservaciones:</h1>

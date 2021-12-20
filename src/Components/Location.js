@@ -1,8 +1,8 @@
-import locationImage from '../Assets/Images/location.jpg';
-import { faMap } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import locationImage from "../Assets/Images/location.jpg";
+import { faMap } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Location = (props) => {
-  const pin = <FontAwesomeIcon icon={faMap} size="xs"/>;
+  const pin = <FontAwesomeIcon icon={faMap} size="xs" />;
   return (
     <div className="card-transparent">
       <div className="location-container">
@@ -10,11 +10,7 @@ const Location = (props) => {
         <div>
           <h3>{props.title}</h3>
         </div>
-        <a
-          href={props.url}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={props.url} target="_blank" rel="noreferrer">
           <img src={locationImage} alt="Mapa" />
         </a>
       </div>
