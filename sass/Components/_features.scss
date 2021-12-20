@@ -45,10 +45,14 @@
     & li {
       padding: 1rem 1.5rem;
       border: 2px solid $color-primary;
-      align-self: center;
       border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 }
+
 @media (max-width:$tablet-size) {
   .features-list-container{
     & h1 {
