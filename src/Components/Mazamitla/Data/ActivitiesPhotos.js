@@ -1,6 +1,6 @@
-import Tirolesa from '../../Assets/Images/tirolesa.jpg';
-import Motos from '../../Assets/Images/motos.jpg';
-import Caballos from '../../Assets/Images/paseo-caballo.jpg'
+import Tirolesa from '../../../Assets/Images/tirolesa.jpg';
+import Motos from '../../../Assets/Images/motos.jpg';
+import Caballos from '../../../Assets/Images/paseo-caballo.jpg'
 const Activities = [
   {
     name: 'Tirolesas',

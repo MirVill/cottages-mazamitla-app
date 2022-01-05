@@ -1,10 +1,10 @@
-import LasCatarinasData from "../Containers/LasCatarinasData";
+import LasCatarinasContainer from "../Containers/LasCatarinasContainer";
 import { useEffect } from "react";
 
 const LasCatarinas = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  return <LasCatarinasData />;
+    window.scrollTo(0, 0);
+  }, []);
+  return <LasCatarinasContainer />;
 };
 export default LasCatarinas;

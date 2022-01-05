@@ -1,12 +1,15 @@
 import { NavLink } from "react-router-dom";
-import Card from "../Components/Card";
+import Card from "../Utils/Card";
 import Button from "../Utils/Button";
 import { useEffect } from "react";
+import AboutUsInfo from "../Components/Contacts/Data/AboutUsInfo";
+import AboutUsCard from "../Components/Contacts/AboutUsCard";
 
 const Contacts = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="contacts__page-container">
       <section className="contacts__section">
@@ -30,37 +33,18 @@ const Contacts = () => {
       <section className="contacts__meet-us">
         <h1>Conocenos</h1>
         <div className="contacts__meet-us--details">
-          <Card>
-            <h3 className="contacts__meet-us--title">¿Quienes Somos?</h3>
-            <p>
-              Somos un negocio familiar, encargado de brindarte el mejor
-              hospedaje en Mazamitla, Jalisco. Nuestra Cabaña te hará escapar
-              del bullicio de la ciudad durante los dias que decidas quedarte,
-              se encuentra ubicada en el fraccinamiento la Toscana, lugar en el
-              que las cabañas se encuentran en armonia con el bosque.
-            </p>
-          </Card>
-          <Card>
-            <h3 className="contacts__meet-us--title">
-              Politica de reservación
-            </h3>
-            <p>
-              Para reservar es necesario pagar al menos la mitad del costo total
-              de su hospedaje. Recibimos pagos mediante depositos, ya sea desde
-              oxxo o tranferencia bancaria. El resto debe ser liquidado una
-              semana antes de su fecha de hospedaje.
-            </p>
-          </Card>
-          <Card>
-            <h3 className="contacts__meet-us--title">Proceso de llegada</h3>
-            <p>
-              A tu llegada al fraccionamiento, deberas contactar al
-              administrador de la cabaña, el Sr. Salvador. El te hará entrega de
-              las llaves y te mostrará la ubicaión exacta de Las Catarinas.
-              Cualquier situación que se tenga acerca de las instalaciones
-              debera ser tratado con el.
-            </p>
-          </Card>
+          <AboutUsCard
+            title={AboutUsInfo[0].title}
+            text={AboutUsInfo[0].text}
+          />
+          <AboutUsCard
+            title={AboutUsInfo[1].title}
+            text={AboutUsInfo[1].text}
+          />
+          <AboutUsCard
+            title={AboutUsInfo[2].title}
+            text={AboutUsInfo[2].text}
+          />
         </div>
       </section>
       <NavLink to="las-catarinas">

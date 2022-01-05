@@ -1,6 +1,6 @@
-import andador from '../../Assets/Images/andador.jpg';
-import puente from '../../Assets/Images/puente.jpg';
-import cascada from '../../Assets/Images/cascada.jpg';
+import andador from '../../../Assets/Images/andador.jpg';
+import puente from '../../../Assets/Images/puente.jpg';
+import cascada from '../../../Assets/Images/cascada.jpg';
 const Atractions = [
   {
     name: 'Andador',
