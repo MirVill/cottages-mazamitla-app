@@ -2,16 +2,20 @@
 .header-container{
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  padding: 1.5rem;
+  align-items: center;
+  padding: 1rem;
   background-color: $color-primary;
   margin-bottom: 2rem;
 }
-
+.header-container__title {
+  display: flex;
+  align-items: center;
+}
 .header-title {
   color: $color-text-white;
   font-size: 3rem;
   font-weight: 500;
+  margin:0 .5rem;
 }
 
 .header-navlinks {
@@ -75,6 +79,11 @@
 @media (max-width: $mobile-l-size) {
   .header-container {
     padding: 1rem;
+  }
+  .header-container__title {
+    & img {
+      max-width: 60px;
+    }
   }
   .header-title{
     align-self: center;
