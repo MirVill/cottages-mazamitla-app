@@ -74,7 +74,7 @@ export default [
   },
   {
     src: Image15,
-    title: "Tapanco",
+    title: "Mezzanine",
   },
   {
     src: Image16,

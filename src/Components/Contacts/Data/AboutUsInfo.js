@@ -5,7 +5,7 @@ const AboutUsInfo = [
   },
   {
     title: "Política de reservacion",
-    text: "Para reservar es necesario pagar al menos la mitad del costo total de su hospedaje. Recibimos pagos mediante depositos, ya sea desde oxxo o tranferencia bancaria. El resto debe ser liquidado una semana antes de su fecha de hospedaje.",
+    text: "Para reservar es necesario pagar al menos la mitad del costo total de su hospedaje. Recibimos pagos mediante depositos, ya sea desde oxxo o tranferencia bancaria. El resto debe ser liquidado un día antes de su fecha de hospedaje.",
   },
   {
     title: "Proceso de llegada",
