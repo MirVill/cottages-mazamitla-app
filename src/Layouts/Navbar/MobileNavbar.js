@@ -1,9 +1,9 @@
 import NavLinks from "./NavLinks";
 
-const MobileNavbar = () => {
-  return (
+const MobileNavbar = (props) => {
+   return (
     <nav className="header-navbar-mobile">
-      <NavLinks />
+      <NavLinks onClick={props.onClickLinkHandler} />
     </nav>
   );
 };
