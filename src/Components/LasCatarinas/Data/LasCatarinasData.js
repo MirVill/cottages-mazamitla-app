@@ -1,7 +1,7 @@
 export const featuresData = {
   name: "las catarinas",
-  description: "Cabaña para 18 personas",
-  price: "$2,700MXN por noche",
+  description: "Cabaña para 16 personas",
+  price: "$2,800MXN por noche",
   bedrooms: "3 Recamaras",
   toilets: "2 Baños y medio",
   chimneys: "3 Chimeneas",
@@ -15,7 +15,9 @@ export const featuresData = {
     "Hamaca",
     "Jardín",
     "Terraza",
+    "Fogatero",
     "TV con dish",
+    "Mezzanine"
   ],
 };
 export const scheduleData = {
