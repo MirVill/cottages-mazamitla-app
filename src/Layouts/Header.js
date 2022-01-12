@@ -12,7 +12,7 @@ const Header = () => {
   const menuClickHandler = () => {
     setMenuIsOpen(!menuIsOpen);
   };
-  const LinkClickHandler = () => {
+  const linkClickHandler = () => {
     setMenuIsOpen(false);
   }
   return (
@@ -20,11 +20,11 @@ const Header = () => {
       <NavLink to="/inicio" className="header-navlinks">
         <div className="header-container__title">
         <img src={LogoS} alt="Logo" />
-        <h1 className="header-title">Cabañas Las Catarinas</h1>
+        <h1 className="header-title" onClick={menuIsOpen && linkClickHandler}>Cabañas Las Catarinas</h1>
         </div>
       </NavLink>
       <DesktopNavbar />
-      {menuIsOpen && <MobileNavbar onClickLinkHandler={LinkClickHandler}/>}
+      {menuIsOpen && <MobileNavbar onClickLinkHandler={linkClickHandler}/>}
       <div className="header-menu" onClick={menuClickHandler}>
         {menu}
       </div>
