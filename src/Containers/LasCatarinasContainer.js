@@ -9,7 +9,7 @@ const LasCatarinasData = () => {
       <h1 className="page-title">Las Catarinas</h1>
       <LasCatarinasGallery />
       <InformationLasCatarinas />
-      <Card><h3>¡Hospedate entre semana y obten precio especial de $2500MXN por noche!</h3></Card>
+      <Card><h3>¡Hospédate entre semana y obten precio especial de $2500MXN por noche!</h3></Card>
       <NavLink to="/contactos">
         <Button text="Reservar" />
       </NavLink>
