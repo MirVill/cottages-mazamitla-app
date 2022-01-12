@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import DesktopNavbar from "./Navbar/DesktopNavbar";
 import MobileNavbar from "./Navbar/MobileNavbar";
 import { NavLink } from "react-router-dom";
 import LogoS from "../Assets/Images/Logo-cabañaS.png";
 
-const Header = () => {
+const Header = (props) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const menu = <FontAwesomeIcon icon={faBars} size="lg" />;
   const menuClickHandler = () => {
@@ -15,12 +15,16 @@ const Header = () => {
   const linkClickHandler = () => {
     setMenuIsOpen(false);
   }
-  return (
+ 
+  if(props.mainIsClicked && menuIsOpen) {
+      setMenuIsOpen(false);
+    } 
+   return (
     <div className="header-container">
       <NavLink to="/inicio" className="header-navlinks">
         <div className="header-container__title">
         <img src={LogoS} alt="Logo" />
-        <h1 className="header-title" onClick={menuIsOpen && linkClickHandler}>Cabañas Las Catarinas</h1>
+        <h1 className="header-title" onClick={menuIsOpen ? linkClickHandler : undefined}>Cabañas Las Catarinas</h1>
         </div>
       </NavLink>
       <DesktopNavbar />
