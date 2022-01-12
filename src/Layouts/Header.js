@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DesktopNavbar from "./Navbar/DesktopNavbar";
 import MobileNavbar from "./Navbar/MobileNavbar";
 import { NavLink } from "react-router-dom";
@@ -12,7 +12,9 @@ const Header = () => {
   const menuClickHandler = () => {
     setMenuIsOpen(!menuIsOpen);
   };
-
+  const LinkClickHandler = () => {
+    setMenuIsOpen(false);
+  }
   return (
     <div className="header-container">
       <NavLink to="/inicio" className="header-navlinks">
@@ -22,7 +24,7 @@ const Header = () => {
         </div>
       </NavLink>
       <DesktopNavbar />
-      {menuIsOpen && <MobileNavbar />}
+      {menuIsOpen && <MobileNavbar onClickLinkHandler={LinkClickHandler}/>}
       <div className="header-menu" onClick={menuClickHandler}>
         {menu}
       </div>

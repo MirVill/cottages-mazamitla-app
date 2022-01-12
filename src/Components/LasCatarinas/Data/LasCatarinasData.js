@@ -15,6 +15,7 @@ export const featuresData = {
     "Hamaca",
     "Jardín",
     "Terraza",
+    "Asador",
     "Fogatero",
     "TV con dish",
     "Mezzanine"

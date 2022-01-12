@@ -44,7 +44,7 @@ const Cabins = () => {
           <DescriptionCard
             icon={dungeon}
             title="En fraccionamiento"
-            description="Te ofecemos mayor seguridad y ateción."
+            description="Te ofecemos mayor seguridad y atención."
           />
         </div>
         <NavLink to="/las-catarinas">
