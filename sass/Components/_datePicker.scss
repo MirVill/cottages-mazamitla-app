@@ -1,0 +1,108 @@
+@import "../Abstracts/variables";
+.component-container{
+  display: flex;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3rem 1.5rem;
+  background-color: $color-text-white;
+  box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
+}
+.datePicker-container {
+  display: flex;
+  padding: 3rem;
+}
+.datePicker-container__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin:0 2rem;
+  & h1 {
+  font-size: $title-l;
+  font-weight: 500;
+  }
+  & h2 {
+  font-size: $title-m;
+  font-weight: 500;
+  } 
+  & h3 {
+    font-size: $title-s;
+    font-weight: 500;
+    } 
+}
+
+.datePicker-container__close {
+  justify-self: flex-end;
+  transition: all(.2s);
+  &:hover,
+  &:active {
+    cursor: pointer;
+    color: rgba($color: $color-primary, $alpha: .7);
+  }
+}
+
+.calendar {
+  border: 1px solid rgba($color: $color-primary, $alpha: .7);
+  box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
+}
+
+.datePicker-container__btn {
+  display: none;
+}
+
+@media(max-width: $tablet-size) {
+  .datePicker-container {
+    flex-direction: column;
+  }
+  .datePicker-container__title {
+    line-height: 4rem;
+    & h1,
+    & h2,
+    & h3 {
+      font-size: $title-m;
+    } 
+  }
+  .calendar {
+    margin-top: 2rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: $mobile-l-size) {
+  .datePicker-container {
+    padding: 0;
+  }
+}
+@media (max-width: $mobile-m-size) {
+  .component-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .datePicker-container__title {
+    & h1, h2, h3 {
+      font-size: $title-xs;
+    }
+  }
+  .datePicker-container__close {
+    display: none;
+  }
+  .calendar {
+    border: none;
+  }
+  .datePicker-container__btn {
+    display: block;
+    align-self: center;
+    padding: .5rem 1.7rem;
+    margin: 1.5rem;
+    border-radius: 50px;
+    border: 2px solid rgba($color: $color-primary, $alpha: .7);
+      &:hover,
+      &:active {
+        cursor: pointer;
+        transform:translateY(2px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      }
+  }
+}

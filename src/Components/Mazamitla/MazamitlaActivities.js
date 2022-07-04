@@ -1,7 +1,7 @@
 const MazamitlaActivities = (props) => {
   const activities = props.activitiesPhotos.map((act) => {
     return (
-      <div className="activities__container">
+      <div className="activities__container" key={act.name}>
         <img
           src={act.photo}
           alt={act.name}

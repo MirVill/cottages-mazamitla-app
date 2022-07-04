@@ -634,6 +634,101 @@ body {
     margin: 1.5rem 0;
     box-shadow: none; } }
 
+.modal-container {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(123, 198, 123, 0.8); }
+
+.component-container {
+  display: flex;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3rem 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+.datePicker-container {
+  display: flex;
+  padding: 3rem; }
+
+.datePicker-container__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 2rem; }
+  .datePicker-container__title h1 {
+    font-size: 3rem;
+    font-weight: 500; }
+  .datePicker-container__title h2 {
+    font-size: 2.5rem;
+    font-weight: 500; }
+  .datePicker-container__title h3 {
+    font-size: 2.3rem;
+    font-weight: 500; }
+
+.datePicker-container__close {
+  justify-self: flex-end;
+  transition: all(0.2s); }
+  .datePicker-container__close:hover, .datePicker-container__close:active {
+    cursor: pointer;
+    color: rgba(123, 198, 123, 0.7); }
+
+.calendar {
+  border: 1px solid rgba(123, 198, 123, 0.7);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+
+.datePicker-container__btn {
+  display: none; }
+
+@media (max-width: 768px) {
+  .datePicker-container {
+    flex-direction: column; }
+  .datePicker-container__title {
+    line-height: 4rem; }
+    .datePicker-container__title h1,
+    .datePicker-container__title h2,
+    .datePicker-container__title h3 {
+      font-size: 2.5rem; }
+  .calendar {
+    margin-top: 2rem;
+    align-items: center; } }
+
+@media (max-width: 460px) {
+  .datePicker-container {
+    padding: 0; } }
+
+@media (max-width: 380px) {
+  .component-container {
+    padding: 1rem;
+    flex-direction: column; }
+  .datePicker-container__title h1, .datePicker-container__title h2, .datePicker-container__title h3 {
+    font-size: 2rem; }
+  .datePicker-container__close {
+    display: none; }
+  .calendar {
+    border: none; }
+  .datePicker-container__btn {
+    display: block;
+    align-self: center;
+    padding: .5rem 1.7rem;
+    margin: 1.5rem;
+    border-radius: 50px;
+    border: 2px solid rgba(123, 198, 123, 0.7); }
+    .datePicker-container__btn:hover, .datePicker-container__btn:active {
+      cursor: pointer;
+      transform: translateY(2px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
+
 .welcome-page {
   display: grid;
   align-items: center;
@@ -889,7 +984,8 @@ body {
   text-transform: uppercase;
   transition: all .2s;
   position: relative;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
   .btn:hover {
     cursor: pointer;
     color: #5E454B; }
